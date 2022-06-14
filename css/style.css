@@ -139,10 +139,36 @@ header .bottom .search {
 
 /* PLAYSTATION PLUS */
 
-#playstation-plus .logo {
+#playstation-plus .text {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#playstation-plus .text .logo {
     width: 300px;
 }
 
-#playstation-plus .ps-plus {
+#playstation-plus .image img {
+    height: 100%;
+}
+
+/* PLAYSTATION NOW */
+
+#playstation-now .text {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#playstation-now .text .logo {
+    width: 300px;
+}
+
+#playstation-now .image img {
     height: 100%;
 }
