@@ -115,3 +115,9 @@ header .bottom .search {
 #jumbotron.itt img {
     width: 300px;
 }
+
+/* NUOVE USCITE */
+
+#new-games {
+    background-color: var(--darkgrey);
+}
