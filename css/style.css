@@ -4,10 +4,13 @@ body {
 }
 
 :root {
+    --lggrey: rgb(190, 188, 187);
     --grey: rgb(117, 117, 117);
-    --darkgrey: rgb(54, 54, 54);
-    --blue: rgb(45, 100, 230);
+    --dkgrey: rgb(54, 54, 54);
+    --lgblue: rgb(45, 100, 230);
+    --dkblue: rgb(22, 28, 59);
     --red: rgb(205, 61, 15);
+
 }
 
 header {
@@ -32,12 +35,24 @@ header .bottom {
     background-color: var(--red);
 }
 
-.bground-blue {
-    background-color: var(--blue);
+.bground-lgblue {
+    background-color: var(--lgblue);
 }
 
-.bground-darkgrey {
-    background-color: var(--darkgrey);
+.bground-dkblue {
+    background-color: var(--dkblue);
+}
+
+.bground-lggrey {
+    background-color: var(--lggrey);
+}
+
+.bground-grey {
+    background-color: var(--grey);
+}
+
+.bground-dkgrey {
+    background-color: var(--dkgrey);
 }
 
 .text-grey {
@@ -88,7 +103,7 @@ header .bottom .search {
 }
 
 
-#jumbotron.returnal img {
+#jumbotron.returnal .logo {
     width: 300px;
 }
 
@@ -116,8 +131,18 @@ header .bottom .search {
     width: 300px;
 }
 
-/* NUOVE USCITE */
+/* PLAYSTATION 4 */
 
-#new-games {
-    background-color: var(--darkgrey);
+#playstation-4 .info {
+    min-height: 50px;
+}
+
+/* PLAYSTATION PLUS */
+
+#playstation-plus .logo {
+    width: 300px;
+}
+
+#playstation-plus .ps-plus {
+    height: 100%;
 }
