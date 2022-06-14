@@ -1,0 +1,77 @@
+/* GENERICS */
+body {
+    font-family: sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header .top {
+    background-color: rgb(0 0 0);
+}
+
+header .bottom {
+    background-color: rgb(255 255 255);
+}
+
+/* UTILS */
+
+:root {
+    --grey: rgb(117, 117, 117);
+}
+
+.bground-red {
+    background-color: ;
+}
+
+.text-grey {
+    color: var(--grey);
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+/* HEADER */
+
+header .top img {
+    width: 70px;
+}
+
+header .bottom .search {
+    text-align: end;
+    vertical-align: middle;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* MAIN */
+
+/* JUMBOTRON RETURNAL */
+
+#jumbotron.returnal {
+    background-image: url(../img/jumbo-bg.png);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jumbotron.returnal .row {
+    height: 600px;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+#jumbotron.returnal .col-12 {
+    height: 300px;
+}
+
+
+#jumbotron.returnal img {
+    width: 300px;
+}
