@@ -3,11 +3,19 @@ body {
     font-family: sans-serif;
 }
 
+:root {
+    --grey: rgb(117, 117, 117);
+    --darkgrey: rgb(54, 54, 54);
+    --blue: rgb(45, 100, 230);
+    --red: rgb(205, 61, 15);
+}
+
 header {
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 header .top {
@@ -20,16 +28,24 @@ header .bottom {
 
 /* UTILS */
 
-:root {
-    --grey: rgb(117, 117, 117);
+.bground-red {
+    background-color: var(--red);
 }
 
-.bground-red {
-    background-color: ;
+.bground-blue {
+    background-color: var(--blue);
+}
+
+.bground-darkgrey {
+    background-color: var(--darkgrey);
 }
 
 .text-grey {
     color: var(--grey);
+}
+
+.text-blue {
+    color: var(--blue);
 }
 
 .btn {
@@ -73,5 +89,29 @@ header .bottom .search {
 
 
 #jumbotron.returnal img {
+    width: 300px;
+}
+
+/* JUMBOTRON ITT */
+
+#jumbotron.itt {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#jumbotron.itt .row {
+    height: 600px;
+    align-items: center;
+}
+
+#jumbotron.itt .col-12 {
+    height: 500px;
+}
+
+
+#jumbotron.itt img {
     width: 300px;
 }
