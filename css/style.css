@@ -1,4 +1,4 @@
-/* GENERICS */
+/******************* GENERICS *****************/
 body {
     font-family: sans-serif;
 }
@@ -21,15 +21,11 @@ header {
     z-index: 1;
 }
 
-header .top {
-    background-color: rgb(0 0 0);
+footer {
+    background-color: var(--lgblue);
 }
 
-header .bottom {
-    background-color: rgb(255 255 255);
-}
-
-/* UTILS */
+/******************** UTILS ******************/
 
 .bground-red {
     background-color: var(--red);
@@ -59,17 +55,44 @@ header .bottom {
     color: var(--grey);
 }
 
-.text-blue {
-    color: var(--blue);
+.text-lgblue {
+    color: var(--lgblue);
 }
 
-.btn {
-    border-radius: 20px;
+/* JUMBOTRON */
+
+section[id^="jumbotron"] {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* HEADER */
+section[id^="jumbotron"] .logo {
+    width: 300px;
+}
 
-header .top img {
+/* BANNER */
+
+section[id^="banner"] .text {
+    height: 300px;
+}
+
+section[id^="banner"] .logo {
+    width: 300px;
+}
+
+/*********************** HEADER ****************/
+
+header .top {
+    background-color: rgb(0 0 0);
+}
+
+header .bottom {
+    background-color: rgb(255 255 255);
+}
+
+header .top .logo {
     width: 70px;
 }
 
@@ -80,55 +103,18 @@ header .bottom .search {
     line-height: 40px;
 }
 
-/* MAIN */
+/********************* MAIN *******************/
 
 /* JUMBOTRON RETURNAL */
 
-#jumbotron.returnal {
+#jumbotron-returnal {
     background-image: url(../img/jumbo-bg.png);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#jumbotron.returnal .row {
-    height: 600px;
-    align-items: flex-end;
-    padding-bottom: 50px;
-}
-
-#jumbotron.returnal .col-12 {
-    height: 300px;
-}
-
-
-#jumbotron.returnal .logo {
-    width: 300px;
 }
 
 /* JUMBOTRON ITT */
 
-#jumbotron.itt {
+#jumbotron-itt {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#jumbotron.itt .row {
-    height: 600px;
-    align-items: center;
-}
-
-#jumbotron.itt .col-12 {
-    height: 500px;
-}
-
-
-#jumbotron.itt img {
-    width: 300px;
 }
 
 /* PLAYSTATION 4 */
@@ -137,38 +123,4 @@ header .bottom .search {
     min-height: 50px;
 }
 
-/* PLAYSTATION PLUS */
-
-#playstation-plus .text {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-#playstation-plus .text .logo {
-    width: 300px;
-}
-
-#playstation-plus .image img {
-    height: 100%;
-}
-
-/* PLAYSTATION NOW */
-
-#playstation-now .text {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-#playstation-now .text .logo {
-    width: 300px;
-}
-
-#playstation-now .image img {
-    height: 100%;
-}
+/******************* FOOTER ********************/
