@@ -59,6 +59,13 @@ footer {
     color: var(--lgblue);
 }
 
+.button {
+    padding: 10px 20px;
+    color: rgb(255 255 255);
+    border-radius: 50px;
+    text-decoration: none;
+}
+
 /* JUMBOTRON */
 
 section[id^="jumbotron"] {
@@ -111,16 +118,23 @@ header .bottom .search {
     background-image: url(../img/jumbo-bg.png);
 }
 
+/* GAMES */
+
+.game img {
+    transition: position 1s;
+}
+
 /* JUMBOTRON ITT */
 
 #jumbotron-itt {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
-/* PLAYSTATION 4 */
+/* BANNER-PLUS */
 
-#playstation-4 .info {
-    min-height: 50px;
+#banner-plus .button {
+    color: var(--lgblue);
+    background-color: lightgray;
 }
 
 /******************* FOOTER ********************/
@@ -131,4 +145,22 @@ footer .globe {
 
 footer .sie-logo {
     width: 120px;
+}
+
+/**************** EFFETTI HOVER *****************/
+
+.button:hover {
+    border-style: double;
+    border-color: rgb(255 255 255);
+    color: rgb(255 255 255);
+}
+
+header .nav-item:hover {
+    color: rgb(0 0 0);
+}
+
+#games .game:hover img {
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
 }
