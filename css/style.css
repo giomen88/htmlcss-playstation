@@ -8,9 +8,9 @@ body {
     --grey: rgb(117, 117, 117);
     --dkgrey: rgb(54, 54, 54);
     --lgblue: rgb(45, 100, 230);
+    --blue: rgb(0, 67, 156);
     --dkblue: rgb(22, 28, 59);
     --red: rgb(205, 61, 15);
-
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 }
 
 footer {
-    background-color: var(--lgblue);
+    background-color: var(--blue);
 }
 
 /******************** UTILS ******************/
@@ -124,3 +124,11 @@ header .bottom .search {
 }
 
 /******************* FOOTER ********************/
+
+footer .globe {
+    width: 20px;
+}
+
+footer .sie-logo {
+    width: 120px;
+}
