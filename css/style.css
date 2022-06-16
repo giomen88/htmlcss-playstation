@@ -130,6 +130,14 @@ header .bottom .search {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
 
+/* PS 4 */
+
+.reg {
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
 /* BANNER-PLUS */
 
 #banner-plus .button {
