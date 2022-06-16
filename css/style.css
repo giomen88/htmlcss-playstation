@@ -121,7 +121,7 @@ header .bottom .search {
 /* GAMES */
 
 .game img {
-    transition: position 1s;
+    transition: transform 0.5s;
 }
 
 /* JUMBOTRON ITT */
@@ -161,6 +161,5 @@ header .nav-item:hover {
 
 #games .game:hover img {
     cursor: pointer;
-    position: absolute;
-    top: -20px;
+    transform: translate(0, -20px);
 }
